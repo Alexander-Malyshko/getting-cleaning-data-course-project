@@ -31,122 +31,12 @@ The following has been done to achieve the tidied dataset:
     + data variable names are appened with "average_"
 6. Tidied data is saved to TXT file
     
-    
 
-# Codebook
-The below tables describes the variables in the tidied data files. Table 1 describes an example on how to intepret data variable names and Table 2 describes the full list of variables in the tidied dataset.
+The only non-data variables are "Subject" and "Activity", which is used for grouping.
 
-Data Variables are interpreted by the values in between the underscores. An example is provided below.
+For variables derived from mean and standard deviation estimation, the previous labels
+are augmented with the terms "Mean" or "StandardDeviation".
 
-The only non-data variables are "subject_id" and "activity_name", which is used for grouping.
+The data set is written to the file analysisReadyData.txt.
 
-Table 1
 
-Example: average_tbodyacc_mean_x
-
-Label       | Interpretation
-------------|---------------
-average     | This means that the value you see is the average of all the sampled values for a given variable.
-            |    * Possible Values:
-            |        - There is only one type of measurement: Average
-tbodyacc    | This means body acceleration signal value in time domain.
-            | The first character denotes the domain of the value
-            |   * Possible values:
-            |       - 't' - denotes time domain signal
-            |       - 'f' - denotes frequency domain signals
-            | The remain characters describes the type of feature the value represents
-            |   * Possible values:
-            |       - bodyacc: body acceleration signal
-            |       - gravityacc: gravity acceleration signal
-            |       - bodyaccjerk: body acceleration signal
-            |       - bodygyrojerk: body gyroscope jerk
-            |       - bodyaccmag: body acceleration jerk
-            |       - gravityaccmag: gravity acceleration magnitude
-            |       - bodyaccjerkmag: body acceleration jerk magnitude
-            |       - bodygyromag: body gyroscope magnitude
-            |       - bodygyrojerkmag: body gyroscope jerk magnitude
-mean        | This refers to the measure type of the value
-            |   * Possible values:
-            |       - mean: arithmetic mean
-            |       - std: standard deviation
-x           | This represents the 3-axial direction of the value. This interpretation may not be present in all variables
-            |   * Possible values:
-            |       - x: x-direction
-            |       - y: y-direction
-            |       - z: z-direction
-            
-            
-Table 2: List of variables in tidied dataset
-
-Variables                         | Type        | Description
-----------------------------------|-------------|------------------------------
-subject                        | numeric     | Identification of the volunteers in the dataset
-                                  |             | Valid values: 1 to 30
-activity                     | character   | Name of activity performed by volunteers
-                                  |             | Valid values: walking, walking_upstairs, walking_downstairs, sitting, standing, laying
-average_tbodyacc_mean_x           | numeric     | Refer to illustration table 1
-average_tbodyacc_mean_y           | numeric     | Refer to illustration table 1
-average_tbodyacc_mean_z           | numeric     | Refer to illustration table 1
-average_tbodyacc_std_x            | numeric     | Refer to illustration table 1
-average_tbodyacc_std_y            | numeric     | Refer to illustration table 1
-average_tbodyacc_std_z            | numeric     | Refer to illustration table 1
-average_tgravityacc_mean_x        | numeric     | Refer to illustration table 1
-average_tgravityacc_mean_y        | numeric     | Refer to illustration table 1
-average_tgravityacc_mean_z        | numeric     | Refer to illustration table 1
-average_tgravityacc_std_x         | numeric     | Refer to illustration table 1
-average_tgravityacc_std_y         | numeric     | Refer to illustration table 1
-average_tgravityacc_std_z         | numeric     | Refer to illustration table 1
-average_tbodyaccjerk_mean_x       | numeric     | Refer to illustration table 1
-average_tbodyaccjerk_mean_y       | numeric     | Refer to illustration table 1
-average_tbodyaccjerk_mean_z       | numeric     | Refer to illustration table 1
-average_tbodyaccjerk_std_x        | numeric     | Refer to illustration table 1
-average_tbodyaccjerk_std_y        | numeric     | Refer to illustration table 1
-average_tbodyaccjerk_std_z        | numeric     | Refer to illustration table 1
-average_tbodygyro_mean_x          | numeric     | Refer to illustration table 1
-average_tbodygyro_mean_y          | numeric     | Refer to illustration table 1
-average_tbodygyro_mean_z          | numeric     | Refer to illustration table 1
-average_tbodygyro_std_x           | numeric     | Refer to illustration table 1
-average_tbodygyro_std_y           | numeric     | Refer to illustration table 1
-average_tbodygyro_std_z           | numeric     | Refer to illustration table 1
-average_tbodygyrojerk_mean_x      | numeric     | Refer to illustration table 1
-average_tbodygyrojerk_mean_y      | numeric     | Refer to illustration table 1
-average_tbodygyrojerk_mean_z      | numeric     | Refer to illustration table 1
-average_tbodygyrojerk_std_x       | numeric     | Refer to illustration table 1
-average_tbodygyrojerk_std_y       | numeric     | Refer to illustration table 1
-average_tbodygyrojerk_std_z       | numeric     | Refer to illustration table 1
-average_tbodyaccmag_mean          | numeric     | Refer to illustration table 1
-average_tbodyaccmag_std           | numeric     | Refer to illustration table 1
-average_tgravityaccmag_mean       | numeric     | Refer to illustration table 1
-average_tgravityaccmag_std        | numeric     | Refer to illustration table 1
-average_tbodyaccjerkmag_mean      | numeric     | Refer to illustration table 1
-average_tbodyaccjerkmag_std       | numeric     | Refer to illustration table 1
-average_tbodygyromag_mean         | numeric     | Refer to illustration table 1
-average_tbodygyromag_std          | numeric     | Refer to illustration table 1
-average_tbodygyrojerkmag_mean     | numeric     | Refer to illustration table 1
-average_tbodygyrojerkmag_std      | numeric     | Refer to illustration table 1
-average_fbodyacc_mean_x           | numeric     | Refer to illustration table 1
-average_fbodyacc_mean_y           | numeric     | Refer to illustration table 1
-average_fbodyacc_mean_z           | numeric     | Refer to illustration table 1
-average_fbodyacc_std_x            | numeric     | Refer to illustration table 1
-average_fbodyacc_std_y            | numeric     | Refer to illustration table 1
-average_fbodyacc_std_z            | numeric     | Refer to illustration table 1
-average_fbodyaccjerk_mean_x       | numeric     | Refer to illustration table 1
-average_fbodyaccjerk_mean_y       | numeric     | Refer to illustration table 1
-average_fbodyaccjerk_mean_z       | numeric     | Refer to illustration table 1
-average_fbodyaccjerk_std_x        | numeric     | Refer to illustration table 1
-average_fbodyaccjerk_std_y        | numeric     | Refer to illustration table 1
-average_fbodyaccjerk_std_z        | numeric     | Refer to illustration table 1
-average_fbodygyro_mean_x          | numeric     | Refer to illustration table 1
-average_fbodygyro_mean_y          | numeric     | Refer to illustration table 1
-average_fbodygyro_mean_z          | numeric     | Refer to illustration table 1
-average_fbodygyro_std_x           | numeric     | Refer to illustration table 1
-average_fbodygyro_std_y           | numeric     | Refer to illustration table 1
-average_fbodygyro_std_z           | numeric     | Refer to illustration table 1
-average_fbodyaccmag_mean          | numeric     | Refer to illustration table 1
-average_fbodyaccmag_std           | numeric     | Refer to illustration table 1
-average_fbodybodyaccjerkmag_mean  | numeric     | Refer to illustration table 1
-average_fbodybodyaccjerkmag_std   | numeric     | Refer to illustration table 1
-average_fbodybodygyromag_mean     | numeric     | Refer to illustration table 1
-average_fbodybodygyromag_std      | numeric     | Refer to illustration table 1
-average_fbodybodygyrojerkmag_mean | numeric     | Refer to illustration table 1
-average_fbodybodygyrojerkmag_std  | numeric     | Refer to illustration table 1
