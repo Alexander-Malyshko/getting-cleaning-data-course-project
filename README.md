@@ -17,14 +17,14 @@ Appropriately labels the data set with descriptive variable names.
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 # Files in the repo
-README.md - About the project and general description of the files
-run_analysis.R - Main file with the R script used for the data preparation and cleaning
-Codebook.md - Detailed description of the each step in data preparation and each variable
-AnalysisReadyData.txt - The final output of the R script, i.e. the tidy data set with all the adjustments applied.
+* README.md - About the project and general description of the files
+* run_analysis.R - Main file with the R script used for the data preparation and cleaning
+* Codebook.md - Detailed description of the each step in data preparation and each variable
+* AnalysisReadyData.txt - The final output of the R script, i.e. the tidy data set with all the adjustments applied.
 
 # Getting a tidy data set
 
-1) Download the R script to a local computer from here - https://github.com/Alexander-Malyshko/getting-cleaning-data-course-project
-2) Download the ZIP file to the same directory - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-3) Run the script in the shell or R Studio
-4) Search in the directory for a file called - AnalysisReadyData.txt
+* 1) Download the R script to a local computer from here - https://github.com/Alexander-Malyshko/getting-cleaning-data-course-project
+* 2) Download the ZIP file to the same directory - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+* 3) Run the script in the shell or R Studio
+* 4) Search in the directory for a file called - AnalysisReadyData.txt
