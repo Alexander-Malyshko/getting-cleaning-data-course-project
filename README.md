@@ -21,10 +21,10 @@ From the data set in step 4, creates a second, independent tidy data set with th
 * run_analysis.R - Main file with the R script used for the data preparation and cleaning
 * Codebook.md - Detailed description of the each step in data preparation and each variable
 * AnalysisReadyData.txt - The final output of the R script, i.e. the tidy data set with all the adjustments applied.
-* 
+
 ## Data Transformation Process
 
-###The code contains 5 steps described in the course project's definition.
+### The code contains 5 steps described in the course project's definition.
 
 * The unzip function creates a new folder in the working directory called "UCI HAR Dataset" using the data from the downloaded ZIP file.
 * It merges 3 main components from 2 different folders within "UCI HAR Dataset", i.e. training and test data sets using rbind and cbind functions. The code assigns relevant column names.
