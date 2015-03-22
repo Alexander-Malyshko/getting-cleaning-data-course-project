@@ -24,5 +24,7 @@ AnalysisReadyData.txt - The final output of the R script, i.e. the tidy data set
 
 # Getting a tidy data set
 
-1) Download the R script to a local computer
-2) 
+1) Download the R script to a local computer from here - https://github.com/Alexander-Malyshko/getting-cleaning-data-course-project
+2) Download the ZIP file to the same directory - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+3) Run the script in the shell or R Studio
+4) Search in the directory for a file called - AnalysisReadyData.txt
