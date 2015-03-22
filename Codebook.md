@@ -27,10 +27,9 @@ The following has been done to achieve the tidied dataset:
     + "Activity ID" variable is then removed
 5. Tidied data is derived from #5 by performing the following
     + Required data is aggregated and grouped by subject id and activity name. The aggreate function is the average i.e. arithmetic mean
-    + duplicate subject id and activity name variables resulting from the aggregation is removed
     + activity names in the oberservations are converted to lowercase
     + data variable names are appened with "average_"
-6. Tidied data is saved to TXT and CSV files
+6. Tidied data is saved to TXT file
     
     
 
