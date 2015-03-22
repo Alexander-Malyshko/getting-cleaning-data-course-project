@@ -15,3 +15,14 @@ Extracts only the measurements on the mean and standard deviation for each measu
 Uses descriptive activity names to name the activities in the data set
 Appropriately labels the data set with descriptive variable names. 
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+# Files in the repo
+README.md - About the project and general description of the files
+run_analysis.R - Main file with the R script used for the data preparation and cleaning
+Codebook.md - Detailed description of the each step in data preparation and each variable
+AnalysisReadyData.txt - The final output of the R script, i.e. the tidy data set with all the adjustments applied.
+
+# Getting a tidy data set
+
+1) Download the R script to a local computer
+2) 
