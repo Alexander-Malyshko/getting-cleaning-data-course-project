@@ -15,3 +15,8 @@ The code contains 5 steps described in the course project's definition.
 * From the data set in the previous step, it creates a new tidy data set with the average of each variable for each activity and each subject.
 * It creates a new txt file with write.table() using row.name=FALSE. This file is called "AnalysisReadyData.txt". It is the final output of the R script.
 
+## Variables
+
+* dataSubject, dataActivity, dataFeatures contain the data from the downloaded files merged from 2 folders
+* data is a final dataset created from the ZIP file data without any changes applied.
+* 
